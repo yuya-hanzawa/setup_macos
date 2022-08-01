@@ -1,8 +1,5 @@
 # .zshrc
 
-autoload -Uz colors
-colors
-
 # environment variable
 
 export LANG="ja_JP.UTF-8"
@@ -10,8 +7,7 @@ export CLICOLOR=1
 
 # prompt
 
-#PROMPT="%(?.%{${fg[green]}%}.%{${fg[red]}%})[%n@%m]%{${reset_color}%} %# "
-PROMPT="%(?.%{${fg[cyan]}%}.%{${fg[red]}%})[%n@%m]%{${reset_color}%} %# "
+PROMPT="%(?.%F{046}%n@%m%f:%F{190}%c%f %{${reset_color}%}%# .%F{196}%n@%m%f:%F{190}%c%f %{${reset_color}%}%# )"
 
 # alias
 
