@@ -13,7 +13,7 @@ chsh -s /bin/zsh
 
 3. Install git 
 ```
-zsh install.sh
+brew install git
 ```
 
 4. Clone repository
@@ -25,4 +25,9 @@ git clone https://github.com/zawa1120/setup_macos.git
 ```
 cd setup_macos/
 zsh setup.sh
+```
+
+6. Install packages
+```
+zsh install.sh
 ```
