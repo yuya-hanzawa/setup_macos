@@ -3,9 +3,7 @@
 
 1. Change to zsh
 ```
-if [ $SHELL != "/bin/zsh" ]; then
-  chsh -s /bin/zsh
-fi
+chsh -s /bin/zsh
 ```
 
 2. Install brew
@@ -15,7 +13,7 @@ fi
 
 3. Install git 
 ```
-brew install git
+zsh install.sh
 ```
 
 4. Clone repository
