@@ -20,6 +20,12 @@ alias mv='mv -i'
 
 alias dc='docker-compose'
 
+# functionss
+function ol {
+  port=$1
+  open http:localhost:${port}
+}
+
 # hook functions
 
 chpwd() {
