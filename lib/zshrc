@@ -18,12 +18,15 @@ alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 
+# git alias
+alias gc='git clone'
+
+# dokcer alias
 alias dc='docker-compose'
 
 # functionss
 function ol {
-  port=$1
-  open http:localhost:${port}
+  open http:localhost:$1
 }
 
 # hook functions
