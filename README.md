@@ -24,7 +24,7 @@ git clone https://github.com/zawa1120/setup_macos.git
 5. Update .zshrc file
 ```
 cd setup_macos/
-zsh setup.sh
+zsh cp_zsh.sh
 ```
 
 6. Install packages
