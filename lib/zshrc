@@ -19,8 +19,9 @@ alias mv='mv -i'
 alias gc='git clone'
 
 # dokcer alias
-alias up='docker-compose up'
-alias build='docker-compose up --build'
+alias up='docker-compose up -d'
+alias down='docker-compose down'
+alias build='docker-compose up -d --build'
 
 # functionss
 function ol {
