@@ -1,4 +1,6 @@
 // Place your key bindings in this file to override the defaults
+// Path: $HOME/Library/Application\ Support/Code/User/keybindings.json
+
 [
     {
         "key": "cmd+t",
@@ -17,5 +19,24 @@
         "key": "cmd+down",
         "command": "-selectNextSuggestion",
         "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "shift+enter",
+        "command": "python.execInTerminal-icon"
+    },
+    {
+        "key": "cmd+c",
+        "command": "copyRelativeFilePath",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "shift+alt+cmd+c",
+        "command": "-copyRelativeFilePath",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "cmd+c",
+        "command": "-filesExplorer.copy",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
     }
 ]
