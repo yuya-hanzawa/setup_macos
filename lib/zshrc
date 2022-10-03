@@ -1,12 +1,12 @@
 # .zshrc
 
 # environment variable
-export LANG='ja_JP.UTF-8'
+export LANG="ja_JP.UTF-8"
 export CLICOLOR=1
 
 # prompt
-PS1='%n@%m%f:%F{190}%c%f %{${reset_color}%}%# '
-PROMPT='%(?.%F{046}${PS1}.%F{196}${PS1})'
+PS1="%n@%m%f:%F{190}%c%f %{${reset_color}%}%# "
+PROMPT="%(?.%F{046}${PS1}.%F{196}${PS1})"
 
 # alias
 alias la='ls -a'
@@ -15,9 +15,6 @@ alias ll='ls -l'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
-
-# git alias
-alias gc='git clone'
 
 # dokcer alias
 alias up='docker-compose up -d'
@@ -29,7 +26,7 @@ function ol {
   open http:localhost:$1
 }
 
-ssh-keygen -R cloud >/dev/null 2>&1
+ssh-keygen -R test >/dev/null 2>&1 
 
 # hook functions
 chpwd() {
@@ -37,12 +34,3 @@ chpwd() {
   	ls
   fi
 }
-
-# source files
-if [ -f /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc ]; then
-	source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc'
-fi
-
-if [ -f /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc ]; then
-	source '/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc'
-fi
