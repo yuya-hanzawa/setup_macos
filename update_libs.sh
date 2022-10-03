@@ -1,7 +1,4 @@
-#diff $HOME/.zshrc ./lib/zshrc
-#diff $HOME/.zprofile ./lib/zprofile
-#cp $HOME/.zshrc ./lib/zshrc
-
+#!/bin/zsh
 
 if [ $(diff $HOME/.zshrc ./lib/zshrc | wc -l) != 0 ]; then
   echo "Diff .zshrc ./lib/zshrc"
