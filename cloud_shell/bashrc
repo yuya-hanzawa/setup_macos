@@ -1,0 +1,9 @@
+
+alias tf='terraform'
+
+function pro () {
+  gcloud config set project $1
+}
+
+# show projects list
+cat $HOME/projects_list.txt
