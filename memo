@@ -14,7 +14,7 @@ source .bash_profile
 pyenv install 3.7.3
 pyenv global 3.7.3
 
-# python -m pip install
+# Install peco on Cloud Shell
 mkdir $HOME/bin
 cd $HOME/bin
 sudo wget https://github.com/peco/peco/releases/download/v0.5.10/peco_linux_amd64.tar.gz
