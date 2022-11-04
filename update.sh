@@ -1,4 +1,5 @@
 #!/bin/zsh
+# ローカルファイルをこのディレクトリのファイルに反映させる
 
 if [ $(diff $HOME/.zshrc ./lib/zshrc | wc -l) != 0 ]; then
   echo "Diff .zshrc ./lib/zshrc"
