@@ -8,9 +8,9 @@ sudo cp $HOME/bin/peco /usr/local/bin
 
 # config project
 function gpr {
-    output=$(gcloud projects list 2> /dev/null)
+    output=$(gcloud projects list 2> /dev/null | grep "PROJECT_ID" | awk -F " " '{ print $2 }')
     if [ $? -eq 0 ]; then
-        echo ${output} | grep "PROJECT_ID" | awk -F " " '{ print $2 }' > $HOME/.projects_list
+        echo "${output}" > $HOME/.projects_list
     fi
     project=$(cat $HOME/.projects_list | peco)
     gcloud config set project ${project}
