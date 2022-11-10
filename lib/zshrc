@@ -27,7 +27,7 @@ function ol {
 }
 
 # clear cloud shell in known_hosts
-ssh-keygen -R $(cat $HOME/.ssh/config | grep -B 1 "gcloud cloud-shell" | grep "Host" | awk -F " " '{ printf $2 }') >/dev/null 2>&1
+ssh-keygen -R $(cat $HOME/.ssh/config | grep -B 2 "gcloud cloud-shell" | grep "Host" | awk -F " " '{ printf $2 }') >/dev/null 2>&1
 
 # hook functions
 chpwd() {
