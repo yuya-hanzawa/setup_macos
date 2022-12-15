@@ -22,3 +22,5 @@ sudo tar xzvf peco_linux_amd64.tar.gz
 sudo rm -f peco_linux_amd64.tar.gz
 cd peco_linux_amd64
 sudo chmod +x peco
+mv peco ../
+sudo rm -rf peco_linux_amd64/

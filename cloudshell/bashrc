@@ -3,9 +3,6 @@
 # alias
 alias tf='terraform'
 
-# move peco
-sudo cp $HOME/bin/peco /usr/local/bin
-
 # config project
 function gpr {
     output=$(gcloud projects list 2> /dev/null | grep "PROJECT_ID" | awk -F " " '{ print $2 }')
